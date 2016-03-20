@@ -1,0 +1,8 @@
+{
+    "name": "personal-website",
+    "description": "description",
+    "author": "Muhammad Faizan Atiq",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "dependencies": {"angular":"1.5.2"}
+}

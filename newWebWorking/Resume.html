@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="js/jquery.js"></script>
+    <script src="js/resumeBuilder.js"></script>
+    <script>
+        
+        bio["work"] = work;
+        bio["education"] = education;
+        bio["project"] = projects;
+        
+        $(document).ready(function () {
+            $("#main img").attr("src", bio.pictureurl);
+            $("#main h1").append(bio.name);
+            $("#main h3").append(bio.role+" - ");
+            $("#main h3").append(bio.work.position);
+            //$("#main p").append();
+            $("#main p").append("Education: " + bio.education.schools[0].name + "<br/>");
+            $("#main p").append("Phone: "+bio.contact.phone + "<br/>");
+            $("#main p").append("Email: "+bio.contact.email + "<br/>");
+            $("#main p").append("Facebook: "+bio.contact.facebook + "<br/>");
+            $("#main p").append("Twitter: "+bio.contact.twitter + "<br/><br/>");
+            
+            for(var i=0;i<bio.skills.length;i++)
+            {
+                $("#main p").append(bio.skills[i]+",");
+            }
+        });
+    </script>
+</head>
+<body>
+    <div id="main">
+        <img style="width:240px;height:240px;" />
+        <h1></h1>
+        <h3></h3>
+        <p>
+        </p>
+    </div>
+</body>
+</html>
