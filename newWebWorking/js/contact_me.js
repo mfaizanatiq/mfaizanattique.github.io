@@ -17,7 +17,23 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+
             $.ajax({
+                url: "https://formspree.io/mfaizanattique@gmail.com",
+                type: "POST",
+                data: {
+                    name: name,
+                    phone: phone,
+                    email: email,
+                    message: message
+                },
+                dataType: "json",
+                success: function () { alert('message sent!'); },
+                error: function () { alert('OOPS! there seems to be some error!'); }
+            })
+
+
+            /*$.ajax({
                 url: "././mail/contact_me.php",
                 type: "POST",
                 data: {
@@ -50,7 +66,7 @@ $(function() {
                     //clear all fields
                     $('#contactForm').trigger("reset");
                 },
-            })
+            })*/
         },
         filter: function() {
             return $(this).is(":visible");
