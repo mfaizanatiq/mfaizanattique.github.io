@@ -78,7 +78,7 @@ section {
 }
 
     section#about {
-        background: url('../images/Layer 2.png') no-repeat fixed;
+        background: url('../images/Layer-2.jpg') no-repeat fixed;
         background-size: cover;
         padding-top: 10%;
     }
@@ -94,6 +94,9 @@ section {
         -webkit-text-fill-color: black;
     }
 
+    section {
+        padding-bottom:40px;
+    }
     .action-items .btn {
         margin-bottom: 20px;
         background-color: #fe7e01;
