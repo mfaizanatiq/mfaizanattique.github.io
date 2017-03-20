@@ -82,3 +82,24 @@ section {
         background-size: cover;
         padding-top: 10%;
     }
+
+
+@media screen and (max-width: 760px) {
+    h1 {
+        font-size:3rem;
+    }
+    h1 small {
+        background: none;
+        -webkit-background-clip: inherit;
+        -webkit-text-fill-color: black;
+    }
+
+    .action-items .btn {
+        margin-bottom: 20px;
+        background-color: #fe7e01;
+        color:white;
+    }
+    section#about {
+        background-position: top center;
+    }
+}
