@@ -79,8 +79,14 @@ section {
 
     section#about {
         background: url('../images/Layer-2.jpg') no-repeat fixed;
-        background-size: cover;
-        padding-top: 10%;
+        background-size: cover;        
+    }
+    section#about *{
+        color:rgba(0,0,0,0.7);
+    }
+
+    section#about .btn{
+        min-width:300px;
     }
 
 
